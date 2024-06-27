@@ -1,0 +1,93 @@
+/* style.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.backg {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.backg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Place image behind other content */
+}
+
+.hole {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+.about {
+    text-align: center;
+    padding-top: 80px;
+}
+
+.about button {
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.container {
+    position: relative;
+    padding: 20px;
+    background: white;
+    margin-top: -50px; /* Adjust this value to overlap the container with the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.paragraph {
+    background-color: #eee;
+    text-align: center;
+    padding: 20px;
+}
+
+#about p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+#about button {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #23d461;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#about button:hover {
+    background-color: #03c24f;
+}
+
+.hidden {
+    display: none;
+}
